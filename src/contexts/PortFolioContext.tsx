@@ -1,4 +1,4 @@
-import React, { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { clientConfigs } from "../config/clientConfig";
 import { PortfolioContext } from "../hooks/usePortFolio";
 import type { PortfolioConfig } from "../hooks/usePortFolio";
