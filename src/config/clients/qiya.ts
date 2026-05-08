@@ -9,7 +9,8 @@ export const QIYA: PortfolioConfig = {
   tagline: "Gentle on hair. Heavy on style.",
   heroTitle: "Premium Handmade Scrunchies",
   logoText: "QIYA", // Kept all-caps to match their logo's serif font style
-  logoImage: "",
+  logoImage:
+    "https://res.cloudinary.com/ddblal31l/image/upload/v1778221974/Gemini_Generated_Image_7ijqqz7ijqqz7ijq_zt9bi9.png",
   features: [
     {
       title: "Handmade with Love",
@@ -80,11 +81,11 @@ export const QIYA: PortfolioConfig = {
     projects: [
       {
         id: 1,
-        title: "The Mulberry Silk Range",
-        category: "Luxury",
-        // Deep premium pink silk folds
+        title: "Rose Quartz Crystal Cuff",
+        category: "Handcrafted Jewelry",
+        // Hand-woven faceted crystals with gold-tone chain accents
         image:
-          "https://images.unsplash.com/photo-1533158022807-6bb4b197ec0e?q=80&w=800&auto=format&fit=crop",
+          "https://res.cloudinary.com/ddblal31l/image/upload/v1778222259/Screenshot_2026-05-08_120542_ncjzig.png",
       },
       {
         id: 2,
@@ -104,11 +105,10 @@ export const QIYA: PortfolioConfig = {
       },
       {
         id: 4,
-        title: "Festive Velvet Combos",
-        category: "Special Occasion",
-        // Rich, dark velvet texture
+        title: "Royal Plum Tulip Scrunchie",
+        category: "Silk Artisan Collection",
         image:
-          "https://images.unsplash.com/photo-1607582498263-2287eb1ba44a?q=80&w=800&auto=format&fit=crop",
+          "https://res.cloudinary.com/ddblal31l/image/upload/v1778228745/6049877954214432313_121_xyshxv.jpg",
       },
     ],
   },
