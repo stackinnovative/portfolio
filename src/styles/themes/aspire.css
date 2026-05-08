@@ -1,0 +1,25 @@
+@layer base {
+  .theme-aspire_dental {
+    --bg: #ffffff;
+    --bg-secondary: #f0f7f7; /* Soft cool teal tint */
+    --text: #0a3d3d; /* Very deep teal for readability */
+    --muted: #568a8a;
+    --accent: #008989; /* The primary Teal from the poster */
+    --color-theme-accent: #008989;
+    --card: #ffffff;
+    --footer-bg: #004d4d; /* Dark medical teal */
+    --footer-border: rgba(255,255,255,0.1);
+  }
+
+  .dark .theme-aspire_dental, .theme-aspire_dental.dark {
+    --bg: #051a1a;
+    --bg-secondary: #0a2626;
+    --text: #e6f2f2;
+    --muted: #8ababa;
+    --accent: #00b3b3; /* Lighter teal for dark mode pop */
+    --color-theme-accent: #00b3b3;
+    --card: #0d2d2d;
+    --footer-bg: #030f0f;
+    --footer-border: rgba(255,255,255,0.05);
+  } 
+}

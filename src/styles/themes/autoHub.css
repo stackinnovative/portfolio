@@ -1,0 +1,25 @@
+@layer base {
+  .theme-autohub {
+    --bg: #ffffff;
+    --bg-secondary: #f8f8f8;
+    --text: #1a1a1a; /* Near black */
+    --muted: #666666;
+    --accent: #e11d48; /* Bold Racing Red from the logo */
+    --color-theme-accent: #e11d48;
+    --card: #ffffff;
+    --footer-bg: #111111; /* Charcoal Black */
+    --footer-border: rgba(255,255,255,0.1);
+  }
+
+  .dark .theme-autohub, .theme-autohub.dark {
+    --bg: #0a0a0a;
+    --bg-secondary: #141414;
+    --text: #f5f5f5;
+    --muted: #a0a0a0;
+    --accent: #f43f5e; /* Brighter red for dark mode pop */
+    --color-theme-accent: #f43f5e;
+    --card: #1a1a1a;
+    --footer-bg: #000000;
+    --footer-border: rgba(255,255,255,0.05);
+  }
+}

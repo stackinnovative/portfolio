@@ -16,6 +16,8 @@
 @import "./themes/default.css";
 @import "./themes/nithimart.css";
 @import "./themes/qiya.css";
+@import "./themes/aspire.css";
+@import "./themes/autoHub.css";
 
 /* 3. Global Base Styles */
 @layer base {
