@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
-  
+
   // 2. Initialize the dynamic config
   const config = usePortfolio();
 
@@ -31,9 +31,19 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo Section */}
         <a href="#home" className="flex items-center gap-2 group">
-          <div className="bg-theme-accent text-white p-2 rounded-lg opacity-90 group-hover:opacity-100 transition-opacity shadow-sm">
-            <Package size={24} />
-          </div>
+          {/* Conditionally render Image OR Icon */}
+          {config?.logoImage ? (
+            <img
+              src={config?.logoImage}
+              alt={`${config.name} Logo`}
+              className="w-10 h-10 rounded-lg object-contain opacity-90 group-hover:opacity-100 transition-opacity shadow-sm"
+            />
+          ) : (
+            <div className="w-10 h-10 bg-theme-accent text-white flex items-center justify-center rounded-lg opacity-90 group-hover:opacity-100 transition-opacity shadow-sm">
+              <Package size={20} />
+            </div>
+          )}
+
           {/* 3. Replaced gold-shimmer with theme-shimmer and used dynamic logoText */}
           <span className="text-xl font-bold theme-shimmer tracking-tight">
             {config.logoText}
