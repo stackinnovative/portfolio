@@ -1,0 +1,25 @@
+@layer base {
+  .theme-qiya {
+    --bg: #ffffff;
+    --bg-secondary: #fdf8fa; /* Very subtle pink tint for light mode cards */
+    --text: #2d131d; /* Deep plum text instead of pure black */
+    --muted: #8a5a6b;
+    --accent: #D688A6; /* The Dusty Pink from their scrunchie logo */
+    --color-theme-accent: #D688A6; /* Forces Tailwind utilities */
+    --card: #ffffff;
+    --footer-bg: #351722; /* Dark Plum matching their logo background */
+    --footer-border: rgba(255,255,255,0.08);
+  }
+
+  .dark .theme-qiya, .theme-qiya.dark {
+    --bg: #14080d; /* Ultra dark plum/black */
+    --bg-secondary: #1f0d14;
+    --text: #fdf8fa;
+    --muted: #b891a0;
+    --accent: #D688A6; /* Keeps the glowing dusty pink */
+    --color-theme-accent: #D688A6; /* Forces Tailwind utilities */
+    --card: #1a0a11;
+    --footer-bg: #0f0609;
+    --footer-border: rgba(255,255,255,0.08);
+  } 
+}

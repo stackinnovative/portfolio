@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* 1. Map Tailwind Variables */
 @theme {
   --color-theme-bg: var(--bg);
   --color-theme-secondary: var(--bg-secondary);
@@ -11,86 +12,16 @@
   --color-theme-footer-border: var(--footer-border);
 }
 
+/* 2. Import Client Themes */
+@import "./themes/default.css";
+@import "./themes/nithimart.css";
+@import "./themes/qiya.css";
+
+/* 3. Global Base Styles */
 @layer base {
-  /* 1. BASELINE: Developer Portfolio (Tech Blue) */
-  :root {
-    --bg: #ffffff;
-    --bg-secondary: #f3f4f6;
-    --text: #111827;
-    --muted: #6b7280;
-    --accent: #3b82f6; /* Tech Blue */
-    --card: #f9fafb;
-    --footer-bg: #121212;
-    --footer-border: rgba(255,255,255,0.08);
-  }
-
-  .dark {
-    --bg: #0b0b0b;
-    --bg-secondary: #161616;
-    --text: #f9fafb;
-    --muted: #9ca3af;
-    --accent: #60a5fa; /* Brighter Blue */
-    --card: #141414;
-    --footer-bg: #0e0e0e;
-    --footer-border: rgba(255,255,255,0.08);
-  }
-
-  /* 2. THE FIX: NITHI MART OVERRIDE */
-  /* We must force Tailwind's internal --color-* variables to update here */
-  .theme-nithimart {
-    --bg: #ffffff;
-    --bg-secondary: #f3f4f6;
-    --text: #111827;
-    --muted: #6b7280;
-    --accent: #caa24d;
-    --color-theme-accent: #caa24d; /* 🚀 Forces Tailwind utilities to Gold */
-    --card: #f9fafb;
-    --footer-bg: #121212;
-    --footer-border: rgba(255,255,255,0.08);
-  }
-
-  .dark .theme-nithimart, .theme-nithimart.dark {
-    --bg: #0b0b0b;
-    --bg-secondary: #161616;
-    --text: #f9fafb;
-    --muted: #9ca3af;
-    --accent: #d4af37;
-    --color-theme-accent: #d4af37; /* 🚀 Forces Tailwind utilities to Gold */
-    --card: #141414;
-    --footer-bg: #0e0e0e;
-    --footer-border: rgba(255,255,255,0.08);
-  }
-  /* --------------------------------------
-     3. QIYA COLLECTIONS OVERRIDE (Dusty Pink & Plum)
-     -------------------------------------- */
-  .theme-qiya {
-    --bg: #ffffff;
-    --bg-secondary: #fdf8fa; /* Very subtle pink tint for light mode cards */
-    --text: #2d131d; /* Deep plum text instead of pure black */
-    --muted: #8a5a6b;
-    --accent: #D688A6; /* The Dusty Pink from their scrunchie logo */
-    --color-theme-accent: #D688A6; /* Forces Tailwind utilities */
-    --card: #ffffff;
-    --footer-bg: #351722; /* Dark Plum matching their logo background */
-    --footer-border: rgba(255,255,255,0.08);
-  }
-
-  .dark .theme-qiya, .theme-qiya.dark {
-    --bg: #14080d; /* Ultra dark plum/black */
-    --bg-secondary: #1f0d14;
-    --text: #fdf8fa;
-    --muted: #b891a0;
-    --accent: #D688A6; /* Keeps the glowing dusty pink */
-    --color-theme-accent: #D688A6; /* Forces Tailwind utilities */
-    --card: #1a0a11;
-    --footer-bg: #0f0609;
-    --footer-border: rgba(255,255,255,0.08);
-  }
-
   html {
     scroll-behavior: smooth;
   }
-  
   body {
     background-color: var(--bg);
     color: var(--text);
@@ -98,7 +29,7 @@
   }
 }
 
-/* 3. DYNAMIC SHIMMER ANIMATION */
+/* 4. Global Animations */
 .theme-shimmer {
   background: linear-gradient(
     120deg,
