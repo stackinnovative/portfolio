@@ -1,12 +1,14 @@
 import { Hero } from "../sections/Hero/Hero";
 import { Features } from "../sections/Features/Features";
-
 import { Moon, Sun } from "lucide-react";
-import { siteConfig } from "../config/siteConfig";
 import { useTheme } from "../hooks/useTheme";
+// 1. Import the hook instead of siteConfig
+import { usePortfolio } from "../hooks/usePortFolio"; 
 
 export default function Home() {
   const { toggleTheme, theme } = useTheme();
+  // 2. Initialize the dynamic config
+  const config = usePortfolio(); 
 
   return (
     <main className="relative">
@@ -26,9 +28,10 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to package your success?
         </h2>
-        <p className="mb-8">Contact us at {siteConfig.phone}</p>
+        {/* 3. Use config instead of siteConfig */}
+        <p className="mb-8">Contact us at {config.phone}</p>
         <a
-          href={`tel:${siteConfig.phone}`}
+          href={`tel:${config.phone}`}
           className="bg-blue-600 text-white px-6 py-3 rounded-lg"
         >
           Call Now

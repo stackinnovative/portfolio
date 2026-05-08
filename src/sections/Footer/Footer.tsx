@@ -1,9 +1,9 @@
 import { Package, Mail, Phone, MapPin, Link, Hash, Globe } from "lucide-react";
-import { siteConfig } from "../../config/siteConfig";
+import { usePortfolio } from "../../hooks/usePortFolio";
 
 export const Footer = () => {
-  const { footer } = siteConfig;
-
+const config = usePortfolio();
+const { footer } = config;
   return (
     <footer className="bg-theme-footer-bg pt-20 pb-10 border-t border-theme-footer-border relative overflow-hidden">
       {/* Subtle Background Glow */}
@@ -21,7 +21,7 @@ export const Footer = () => {
                 <Package size={24} />
               </div>
               <span className="text-2xl font-bold text-theme-text gold-shimmer">
-                {siteConfig.logoText}
+                {config.logoText}
               </span>
             </a>
             <p className="text-theme-muted mb-8 max-w-sm leading-relaxed">
@@ -101,7 +101,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-theme-footer-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-theme-muted">
-            © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+            © {new Date().getFullYear()} {config.name}. All rights reserved.
           </p>
           <div className="flex gap-6">
             {footer.legal.map((link, i) => (

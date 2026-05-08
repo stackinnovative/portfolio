@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { User, Leaf, Globe, Sparkles } from "lucide-react";
-import { siteConfig } from "../../config/siteConfig";
+import { usePortfolio } from "../../hooks/usePortFolio";
 
 const iconMap: Record<string, React.ElementType> = {
   leaf: Leaf,
@@ -29,8 +29,7 @@ const bentoVariants: Variants = {
 };
 
 export const About = () => {
-  const { aboutSection } = siteConfig;
-
+const { aboutSection } = usePortfolio();
   return (
     <section
       id="about"

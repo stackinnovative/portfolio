@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { ArrowRight, Box, Sparkles } from "lucide-react";
-import { siteConfig } from "../../config/siteConfig";
+import { usePortfolio } from "../../hooks/usePortFolio";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -19,8 +19,7 @@ const itemVariants: Variants = {
 };
 
 export const Hero = () => {
-  const { hero } = siteConfig;
-
+  const { hero } = usePortfolio();
   return (
     <section
       id="home"
@@ -55,8 +54,7 @@ export const Hero = () => {
           <motion.div variants={itemVariants} className="mb-6 space-y-2">
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-theme-text">
               {hero.headingMain}{" "}
-              {/* Using your custom gold-shimmer class for the highlight! */}
-              <span className="gold-shimmer">{hero.headingHighlight}</span>
+              <span className="theme-shimmer">{hero.headingHighlight}</span>
             </h1>
           </motion.div>
 

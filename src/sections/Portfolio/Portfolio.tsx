@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { Camera, ArrowUpRight } from "lucide-react";
-import { siteConfig } from "../../config/siteConfig";
+import { usePortfolio } from "../../hooks/usePortFolio";
 
 // UPGRADED: Cinematic staggered entrance
 const containerVariants: Variants = {
@@ -33,8 +33,7 @@ const itemVariants: Variants = {
 };
 
 export const Portfolio = () => {
-  const { portfolioSection } = siteConfig;
-
+const { portfolioSection } = usePortfolio();
   return (
     <section
       id="portfolio"

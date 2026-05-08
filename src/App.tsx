@@ -1,3 +1,4 @@
+import { PortfolioProvider } from "./contexts/PortFolioContext";
 import { MainLayout } from "./layouts/MainLayout";
 import { About } from "./sections/About/About";
 import { Features } from "./sections/Features/Features";
@@ -9,6 +10,7 @@ import { Testimonials } from "./sections/Testimonials/Testimonials";
 
 function App() {
   return (
+    <PortfolioProvider>
     <MainLayout>
       <Hero />
       <Features />
@@ -18,6 +20,7 @@ function App() {
       <Testimonials />
       <Footer />
     </MainLayout>
+    </PortfolioProvider>
   );
 }
 

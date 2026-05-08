@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { PenTool, Printer, Factory, Sparkles } from "lucide-react";
-import { siteConfig } from "../../config/siteConfig";
+import { usePortfolio } from "../../hooks/usePortFolio";
 
 // Map string identifiers from the config to actual Lucide components
 const iconMap: Record<string, React.ElementType> = {
@@ -30,8 +30,7 @@ const cardVariants: Variants = {
 };
 
 export const Features = () => {
-  const { featuresSection } = siteConfig;
-
+const { featuresSection } = usePortfolio();
   return (
     <section
       id="features"

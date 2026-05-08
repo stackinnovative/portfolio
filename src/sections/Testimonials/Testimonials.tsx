@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { MessageSquare, Star, Quote } from "lucide-react";
-import { siteConfig } from "../../config/siteConfig";
+import { usePortfolio } from "../../hooks/usePortFolio";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -17,7 +17,7 @@ const cardVariants: Variants = {
 };
 
 export const Testimonials = () => {
-  const { testimonialsSection } = siteConfig;
+ const { testimonialsSection } = usePortfolio();
 
   return (
     <section

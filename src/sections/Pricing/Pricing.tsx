@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
 import { CheckCircle2, CreditCard } from "lucide-react";
-import { siteConfig } from "../../config/siteConfig";
+import { usePortfolio } from "../../hooks/usePortFolio";
 
 // Scroll animation variants
 const containerVariants: Variants = {
@@ -22,7 +22,7 @@ const cardVariants: Variants = {
 };
 
 export const Pricing = () => {
-  const { pricingSection } = siteConfig;
+  const { pricingSection } = usePortfolio();
   const [isBulk, setIsBulk] = useState(false);
 
   return (
