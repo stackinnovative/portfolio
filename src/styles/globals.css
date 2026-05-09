@@ -18,6 +18,7 @@
 @import "./themes/qiya.css";
 @import "./themes/aspire.css";
 @import "./themes/autoHub.css";
+@import "./themes/adlift.css";
 
 /* 3. Global Base Styles */
 @layer base {

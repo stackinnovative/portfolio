@@ -1,5 +1,6 @@
 // // src/config/clientConfig.ts
 
+import { ADLIFT_PHYSIO } from "./clients/adlift";
 import { ASPIRE_DENTAL } from "./clients/aspire";
 import { AUTOHUB } from "./clients/autoHub";
 import { DEFAULT_CONFIG } from "./clients/default";
@@ -12,4 +13,5 @@ export const clientConfigs = {
   qiya: QIYA,
   aspire_dental: ASPIRE_DENTAL,
   autohub: AUTOHUB,
+  adlift: ADLIFT_PHYSIO,
 };
