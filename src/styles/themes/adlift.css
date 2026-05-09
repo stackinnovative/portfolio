@@ -1,0 +1,25 @@
+@layer base {
+  .theme-adlift {
+    --bg: #ffffff;
+    --bg-secondary: #f2f8fc; /* Very soft blue/cyan tint for depth */
+    --text: #1a2a4f; /* Deep professional blue from the logo text */
+    --muted: #64748b; /* Clean slate gray */
+    --accent: #00A7A7; /* Vibrant Teal/Cyan from the logo swoosh */
+    --color-theme-accent: #00A7A7;
+    --card: #ffffff;
+    --footer-bg: #142142; /* Deep solid blue */
+    --footer-border: rgba(255,255,255,0.1);
+  }
+
+  .dark .theme-adlift, .theme-adlift_physio.dark {
+    --bg: #0b1120; /* Very dark rich blue background */
+    --bg-secondary: #101a33; /* Slightly lighter deep blue */
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --accent: #00cccc; /* Lighter, brighter cyan for better dark mode contrast */
+    --color-theme-accent: #00cccc;
+    --card: #152240; /* Elevated deep blue for cards */
+    --footer-bg: #070b14;
+    --footer-border: rgba(255,255,255,0.05);
+  } 
+}
