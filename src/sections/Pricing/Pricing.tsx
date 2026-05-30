@@ -119,6 +119,8 @@ export const Pricing = () => {
             <motion.div
               key={index}
               variants={cardVariants}
+              whileHover={{ y: -10 }}
+              transition={{ type: "spring", stiffness: 220, damping: 24 }}
               className={`relative p-8 md:p-10 rounded-3xl transition-all duration-300 ${
                 tier.isPopular
                   ? "bg-theme-card border-2 border-theme-accent shadow-2xl shadow-theme-accent/10 md:-translate-y-4" // Pops out

@@ -28,6 +28,27 @@ export type PortfolioConfig = {
       label: string;
       value: string;
     }[];
+    image?: string;
+    imageAlt?: string;
+    overlayBadge?: string;
+    overlayTitle?: string;
+    overlaySubtext?: string;
+    infoCards?: {
+      icon: string;
+      title: string;
+      desc: string;
+    }[];
+  };
+  highlightSection?: {
+    badge: string;
+    headingMain: string;
+    headingHighlight: string;
+    description: string;
+    items: {
+      title: string;
+      desc: string;
+      icon: string;
+    }[];
   };
   featuresSection: {
     badge: string;
@@ -101,6 +122,17 @@ export type PortfolioConfig = {
       text: string;
       rating: number;
     }[];
+  };
+  whatsapp?: {
+    number: string;
+    message?: string;
+  };
+  locationMap?: {
+    embedUrl?: string;
+    link?: string;
+    label?: string;
+    address?: string;
+    description?: string;
   };
   footer: {
     description: string;

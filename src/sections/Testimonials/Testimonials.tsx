@@ -75,6 +75,8 @@ export const Testimonials = () => {
             <motion.div
               key={index}
               variants={cardVariants}
+              whileHover={{ y: -10, scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 240, damping: 26 }}
               className="relative p-8 md:p-10 rounded-3xl bg-theme-bg border border-theme-muted/10 hover:border-theme-accent/30 transition-colors duration-500 shadow-sm"
             >
               {/* Decorative Background Quote */}

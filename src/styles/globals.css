@@ -19,6 +19,7 @@
 @import "./themes/aspire.css";
 @import "./themes/autoHub.css";
 @import "./themes/adlift.css";
+@import "./themes/desertFrame.css";
 
 /* 3. Global Base Styles */
 @layer base {
@@ -53,4 +54,15 @@
 @keyframes themeShimmer {
   0% { background-position: 0% 50%; }
   100% { background-position: 200% 50%; }
+}
+
+@layer utilities {
+  .glass-tilt {
+    transition: transform 0.35s ease;
+    transform-style: preserve-3d;
+  }
+
+  .glass-tilt:hover {
+    transform: perspective(1000px) translateZ(1px) rotateX(1deg) rotateY(-1deg);
+  }
 }

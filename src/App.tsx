@@ -4,22 +4,27 @@ import { About } from "./sections/About/About";
 import { Features } from "./sections/Features/Features";
 import { Footer } from "./sections/Footer/Footer";
 import { Hero } from "./sections/Hero/Hero";
+
+import { MapSection } from "./sections/Map/Map";
 import { Portfolio } from "./sections/Portfolio/Portfolio";
 import { Pricing } from "./sections/Pricing/Pricing";
 import { Testimonials } from "./sections/Testimonials/Testimonials";
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 
 function App() {
   return (
     <PortfolioProvider>
-    <MainLayout>
-      <Hero />
-      <Features />
-      <Portfolio />
-      <About />
-      <Pricing />
-      <Testimonials />
-      <Footer />
-    </MainLayout>
+      <MainLayout>
+        <Hero />
+        <Features />
+        <Portfolio />
+        <About />
+        <Pricing />
+        <Testimonials />
+        <MapSection />
+        <Footer />
+      </MainLayout>
+      <FloatingWhatsApp />
     </PortfolioProvider>
   );
 }

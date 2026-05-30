@@ -1,0 +1,25 @@
+@layer base {
+  .theme-desertframe {
+    --bg: #ffffff;
+    --bg-secondary: #fdf8f3;
+    --text: #3d1a00;
+    --muted: #7a5c3a;
+    --accent: #8B5E0A;
+    --color-theme-accent: #8B5E0A;
+    --card: #fdf6ee;
+    --footer-bg: #2a0f00;
+    --footer-border: rgba(255,255,255,0.08);
+  }
+
+  .dark .theme-desertframe {
+    --bg: #1a0d00;
+    --bg-secondary: #241200;
+    --text: #f5e6d0;
+    --muted: #b8976a;
+    --accent: #c9860f;
+    --color-theme-accent: #c9860f;
+    --card: #2e1800;
+    --footer-bg: #0f0700;
+    --footer-border: rgba(255,255,255,0.05);
+  }
+}
