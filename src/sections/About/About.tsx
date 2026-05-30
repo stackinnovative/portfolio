@@ -87,6 +87,8 @@ const { aboutSection } = usePortfolio();
           {/* BOX 1: The Main Story (Spans 2 Columns) */}
           <motion.div
             variants={bentoVariants}
+            whileHover={{ y: -8 }}
+            transition={{ type: "spring", stiffness: 260, damping: 26 }}
             className="md:col-span-2 relative p-8 md:p-12 rounded-3xl bg-theme-card border border-theme-muted/10 overflow-hidden group hover:border-theme-accent/30 transition-colors duration-500 shadow-sm hover:shadow-xl hover:shadow-theme-accent/5"
           >
             {/* Subtle background glow effect */}
@@ -125,6 +127,8 @@ const { aboutSection } = usePortfolio();
               <motion.div
                 key={index}
                 variants={bentoVariants}
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 240, damping: 24 }}
                 className={`${gridSpanClass} p-8 rounded-3xl bg-theme-card border border-theme-muted/10 hover:border-theme-accent/30 transition-colors duration-500 shadow-sm hover:shadow-xl hover:shadow-theme-accent/5`}
               >
                 <div className="w-12 h-12 rounded-full bg-theme-bg border border-theme-muted/10 flex items-center justify-center mb-6 text-theme-accent shadow-sm">

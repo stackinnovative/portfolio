@@ -3,7 +3,7 @@ import type { PortfolioConfig } from "../../types/portfolio";
 export const DEFAULT_CONFIG: PortfolioConfig = {
   name: "Stack Innovative",
   description: "High-Performance Web & Mobile Applications",
-  location: "Kochi, Kerala",
+  location: "Calicut, Kerala",
   phone: "+91 9188050342",
   services: ["React.js", "Capacitor Mobile", "Node.js Backend"],
   tagline: "Scalable architecture. Pixel-perfect design.",
@@ -30,23 +30,41 @@ export const DEFAULT_CONFIG: PortfolioConfig = {
     { label: "Contact", href: "#contact" },
   ],
   ctaText: "Let's Talk Code",
+hero: {
+  badge: "Full-Stack Development",
+  headingMain: "Engineered for",
+  headingHighlight: "Performance",
+  description:
+    "End-to-end application development. From custom database schemas and JWT authentication to seamless React frontends and Capacitor mobile builds.",
+  primaryCta: "Start a Project",
+  secondaryCta: "View My Work",
+  stats: [
+    { label: "Projects", value: "50+" },
+    { label: "Location", value: "Calicut" },
+    { label: "Stack", value: "MERN" },
+  ],
+  image:
+    "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop",
+  imageAlt: "Developer writing code on a laptop",
 
-  hero: {
-    badge: "Full-Stack Development",
-    headingMain: "Engineered for",
-    headingHighlight: "Performance",
-    description:
-      "End-to-end application development. From custom database schemas and JWT authentication to seamless React frontends and Capacitor mobile builds.",
-    primaryCta: "View GitHub",
-    secondaryCta: "My Stack",
-    stats: [
-      { label: "Uptime", value: "99.9%" },
-      { label: "Location", value: "Kochi" },
-      { label: "Stack", value: "MERN" },
-    ],
-  },
-
-  featuresSection: {
+  // — previously hardcoded, now dynamic —
+  overlayBadge: "Featured Work",
+  overlayTitle: "Clean code. Scalable architecture.",
+  overlaySubtext: "Built to perform, designed to grow with your business.",
+  infoCards: [
+    {
+      icon: "mappin",
+      title: "Based in Calicut, Kerala",
+      desc: "Serving clients locally and remotely across India.",
+    },
+    {
+      icon: "layers",
+      title: "Full-Stack Delivery",
+      desc: "Frontend, backend, and mobile — all under one roof.",
+    },
+  ],
+},
+featuresSection: {
     badge: "Technical Expertise",
     headingMain: "Scalable Solutions at",
     headingHighlight: "Every Layer",
@@ -69,6 +87,13 @@ export const DEFAULT_CONFIG: PortfolioConfig = {
         icon: "smartphone",
       },
     ],
+  },
+    locationMap: {
+    embedUrl: "https://maps.google.com/maps?q=calicut+kerala&output=embed",
+    link: "https://www.google.com/maps/search/?api=1&query=Calicut%2C+Kerala",
+    label: "Calicut, Kerala",
+    address: "Calicut, Kerala, India",
+    description: "Based in Calicut — working with clients locally and remotely across India.",
   },
 
   portfolioSection: {
@@ -222,6 +247,10 @@ export const DEFAULT_CONFIG: PortfolioConfig = {
         rating: 5,
       },
     ],
+  },
+  whatsapp: {
+    number: "+91 7994285615",
+    message: "Hello! I'm interested in your development services.",
   },
 
   footer: {

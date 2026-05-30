@@ -5,6 +5,10 @@ export const ADLIFT_PHYSIO: PortfolioConfig = {
   description: "Sports Rehab & Wellness Centre",
   location: "Chakkalakkal, Padanilam, Calicut",
   phone: "+91 7736 969 897",
+  whatsapp: {
+    number: "917736969897",
+    message: "Hi, I'd like to book an appointment at Adlift Physio.",
+  },
   services: [
     "Ortho Physiotherapy",
     "Sports Rehab",
